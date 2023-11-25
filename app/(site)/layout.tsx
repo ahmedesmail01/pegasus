@@ -16,7 +16,7 @@ export default async function RootLayout({
 	const pages = await getPages();
 	return (
 		<html lang="en">
-			<body className="max-w-3xl m-auto py-10 px-5">
+			<body className="max-w-3xl m-auto py-10 lg:px-2 md:px-3 sm:px-5  ">
 				<header className="flex items-center justify-between">
 					<Link
 						href="/"
