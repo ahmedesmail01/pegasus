@@ -16,11 +16,11 @@ export default async function RootLayout({
 	const pages = await getPages();
 	return (
 		<html lang="en">
-			<body className="max-w-3xl m-auto py-10 lg:px-2 md:px-3 sm:px-5  ">
+			<body className="max-w-3xl m-auto py-10 lg:px-0 md:px-0 sm:px-5  ">
 				<header className="flex items-center justify-between">
 					<Link
 						href="/"
-						className="text-2xl font-bold bg-gradient-to-r from-orange-400 via-red-500 to-blue-600 bg-clip-text text-transparent"
+						className="lg:text-2xl text-xl font-bold bg-gradient-to-r from-orange-400 via-red-500 to-blue-600 bg-clip-text text-transparent"
 					>
 						Pegasus Solutions
 					</Link>
