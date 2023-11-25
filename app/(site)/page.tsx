@@ -6,7 +6,7 @@ export default async function Home() {
 	const projects = await getProjects();
 	return (
 		<div>
-			<h1 className="text-7xl font-extrabold">
+			<h1 className="lg:text-7xl md:text-4xl text-4xl font-extrabold">
 				Hello I&apos;m{" "}
 				<span className="bg-gradient-to-r from-orange-400 via-red-500 to-blue-600 bg-clip-text text-transparent">
 					Ahmed
@@ -16,7 +16,9 @@ export default async function Home() {
 			<p className="mt-3 text-gray-500 text-xl">
 				Welcome! Checkout my projects
 			</p>
-			<h2 className="mt-8  text-3xl font-bold text-gray-700">My projects</h2>
+			<h2 className="mt-8  lg:text-3xl md:text-2xl text-xl font-bold text-gray-700">
+				My projects
+			</h2>
 			<div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 				{projects.map((project) => (
 					<Link
