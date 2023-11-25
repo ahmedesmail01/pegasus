@@ -16,15 +16,15 @@ export default async function RootLayout({
 	const pages = await getPages();
 	return (
 		<html lang="en">
-			<body className="max-w-3xl m-auto py-10 lg:px-0 md:px-5 px-5  ">
+			<body className="max-w-5xl m-auto py-10 lg:px-0 md:px-5 px-5  ">
 				<header className="flex items-center justify-between">
 					<Link
 						href="/"
-						className="lg:text-2xl text-xl font-bold bg-gradient-to-r from-orange-400 via-red-500 to-blue-600 bg-clip-text text-transparent"
+						className="lg:text-2xl text-lg font-bold bg-gradient-to-r from-orange-400 via-red-500 to-blue-600 bg-clip-text text-transparent"
 					>
 						Pegasus Solutions
 					</Link>
-					<div className="flex items-center gap-5 text-sm text-gray-600">
+					<div className="flex items-center gap-4 text-sm text-gray-600">
 						{pages.map((page) => (
 							<Link
 								href={`/${page.slug}`}
