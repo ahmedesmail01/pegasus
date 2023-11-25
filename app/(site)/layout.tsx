@@ -24,7 +24,7 @@ export default async function RootLayout({
 					>
 						Pegasus Solutions
 					</Link>
-					<div className="flex items-center gap-4 text-sm text-gray-600">
+					<div className="flex items-center gap-3 text-sm text-gray-600">
 						{pages.map((page) => (
 							<Link
 								href={`/${page.slug}`}
