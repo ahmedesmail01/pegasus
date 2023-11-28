@@ -13,6 +13,15 @@ export default async function Home() {
 				</span>
 				!
 			</h1>
+			<div className="my-2 h-1/2">
+				<video width="100%" height="auto" controls autoPlay>
+					<source
+						src="/video.mp4" // Update with your video source URL
+						type="video/mp4"
+					/>
+					Your browser does not support the video tag.
+				</video>
+			</div>
 			<p className="mt-3 text-gray-500 text-xl">
 				Welcome! Checkout my projects
 			</p>
